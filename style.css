@@ -116,6 +116,7 @@ nav{
 
 .lefthero{
     z-index: 3;
+    position: relative;
 }
 
 #square1{
@@ -134,6 +135,38 @@ nav{
     position: absolute;
     right: -10px;
     bottom: 25px;
+}
+
+.borderbluexxl{
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    width: 200px;
+    z-index: 0;
+}
+
+.circlebluexxl{
+    position: absolute;
+    top: -80px;
+    right: 100px;
+    width: 200px;
+    z-index: 0; 
+}
+
+.borderbluel{
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    width: 200px;
+    z-index: 0;
+}
+
+.circlebluel{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    width: 200px;
+    z-index: 0; 
 }
 
 
