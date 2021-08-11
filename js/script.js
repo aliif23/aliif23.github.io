@@ -1,4 +1,5 @@
 const brand = document.querySelector('.brand');
+const navlinks = document.querySelectorAll('.navlinks');
 
 $(function () {
     $(document).scroll(function () {
