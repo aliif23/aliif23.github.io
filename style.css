@@ -11,6 +11,8 @@
 
 }
 
+
+
 h1,h2,h3,h4,h5,h6,p{
     font-family: 'open_sansregular';
 }
@@ -19,8 +21,13 @@ nav{
     background-color: transparent;
 }
 
+.hero{
+    
+}
+
 .herok{
     height: 700px;
+    
 }
 
 .heroimg{
@@ -50,9 +57,10 @@ nav{
  z-index: 2;
 }
 
+
 .hero-lg{
     position: absolute;
-    top: 230px;
+    top: 210px;
     right: 200px;
     z-index: 2;
 }
@@ -167,6 +175,81 @@ nav{
     right: 30px;
     width: 200px;
     z-index: 0; 
+}
+
+.linewhitexxl{
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    width: 100%;
+}
+.linewhitelg{
+    position: absolute;
+    top: -300px;
+    width: 100%;
+}
+
+.linewhitemd1{
+    position: absolute;
+    width: 110%;
+    left: 15px;
+    top: 310px;
+}
+
+.linewhitemd2{
+    position: absolute;
+    width: 110%;
+    left: 15px;
+    top: 310px;
+    transform: rotate(120deg);
+    z-index: 0;
+}
+
+.linewhitemd3{
+    position: absolute;
+    width: 110%;
+    left: 30px;
+    top: 520px;
+    transform: rotate(90deg);
+    z-index: 0;
+}
+
+.linewhitemd4{
+    position: absolute;
+    width: 110%;
+    left: 150px;
+    top: 105px;
+}
+
+.linebluexxl{
+    width: 100%;
+    position: absolute;
+    left: -45px;
+    top: 150px;
+    z-index: -1;
+
+}
+
+.linebluexl{
+    width: 100%;
+    position: absolute;
+    left: -35px;
+    top: 180px;
+    z-index: -1;
+
+}
+
+.linebluelg{
+    width: 100%;
+    position: absolute;
+    left: -25px;
+    top: 200px;
+    z-index: -1;
+
+}
+
+.button{
+    filter: drop-shadow(2px 2px 2px white) drop-shadow(2px 2px #0d6efd);
 }
 
 
