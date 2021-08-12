@@ -177,10 +177,17 @@ nav{
     z-index: 0; 
 }
 
-.linewhitexxl{
+.linewhitexxlstatic{
     position: absolute;
     top: -150px;
     right: -100px;
+    width: 100%;
+}
+
+.linewhitexxl{
+    position: absolute;
+    top: -50px;
+    right: -0px;
     width: 100%;
 }
 .linewhitelg{
@@ -224,6 +231,15 @@ nav{
 .linebluexxl{
     width: 100%;
     position: absolute;
+    left: 455px;
+    top: 70px;
+    z-index: -1;
+
+}
+
+.linebluexxlstatic{
+    width: 100%;
+    position: absolute;
     left: -45px;
     top: 150px;
     z-index: -1;
@@ -233,6 +249,15 @@ nav{
 .linebluexl{
     width: 100%;
     position: absolute;
+    left: 345px;
+    top: 100px;
+    z-index: -1;
+
+}
+
+.linebluexlstatic{
+    width: 100%;
+    position: absolute;
     left: -35px;
     top: 180px;
     z-index: -1;
@@ -240,6 +265,15 @@ nav{
 }
 
 .linebluelg{
+    width: 100%;
+    position: absolute;
+    left: 330px;
+    top: 150px;
+    z-index: -1;
+
+}
+
+.linebluelgstatic{
     width: 100%;
     position: absolute;
     left: -25px;
