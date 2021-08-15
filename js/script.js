@@ -1,6 +1,176 @@
 const brand = document.querySelector('.brand');
 const navlinks = document.querySelectorAll('.navlinks');
 
+const next = document.querySelector('#next');
+const previous = document.querySelector('#previous')
+const ilits = document.querySelector('#ilits');
+const tedx = document.querySelector('#tedx');
+const csb = document.querySelector('#csb');
+const ukm = document.querySelector('#ukm');
+const ilitsdetails = document.querySelector('#ilitsdetails');
+const tedxdetails = document.querySelector('#tedxdetails');
+const csbdetails = document.querySelector('#csbdetails');
+const ukmdetails = document.querySelector('#ukmdetails');
+
+
+ilitsdetails.addEventListener("click",function(){
+  $('.activestart').addClass('d-none');
+  $('.activestart').removeClass('activestart');
+  $('.ilits').removeClass('d-none');
+  $('.ilits').addClass('activestart');
+
+  gsap.from(".ilits", {
+    opacity: 0, 
+    y: -100, 
+    duration: 1
+  });
+});
+
+tedxdetails.addEventListener("click",function(){
+  $('.activestart').addClass('d-none');
+  $('.activestart').removeClass('activestart');
+  $('.tedx').removeClass('d-none');
+  $('.tedx').addClass('activestart');
+
+  gsap.from(".tedx", {
+    opacity: 0, 
+    y: -100, 
+    duration: 1
+  });
+});
+
+csbdetails.addEventListener("click",function(){
+  $('.activestart').addClass('d-none');
+  $('.activestart').removeClass('activestart');
+  $('.csb').removeClass('d-none');
+  $('.csb').addClass('activestart');
+
+  gsap.from(".csb", {
+    opacity: 0, 
+    y: -100, 
+    duration: 1
+  });
+});
+
+ukmdetails.addEventListener("click",function(){
+  $('.activestart').addClass('d-none');
+  $('.activestart').removeClass('activestart');
+  $('.ukm').removeClass('d-none');
+  $('.ukm').addClass('activestart');
+
+  gsap.from(".ukm", {
+    opacity: 0, 
+    y: -100, 
+    duration: 1
+  });
+});
+
+next.addEventListener("click",function(){
+  if(ilits.classList.contains('activestart')){
+    $('.activestart').addClass('d-none');
+    $('.activestart').removeClass('activestart');
+    $('.tedx').removeClass('d-none');
+    $('.tedx').addClass('activestart');
+
+    gsap.from(".tedx", {
+      opacity: 0, 
+      x: -100, 
+      duration: 1
+    });
+  }
+
+  else if(tedx.classList.contains('activestart')){
+    $('.activestart').addClass('d-none');
+    $('.activestart').removeClass('activestart');
+    $('.csb').removeClass('d-none');
+    $('.csb').addClass('activestart');
+
+    gsap.from(".csb", {
+      opacity: 0, 
+      x: -100, 
+      duration: 1
+    });
+    
+  }
+
+  else if(csb.classList.contains('activestart')){
+    $('.activestart').addClass('d-none');
+    $('.activestart').removeClass('activestart');
+    $('.ukm').removeClass('d-none');
+    $('.ukm').addClass('activestart');
+
+    gsap.from(".ukm", {
+      opacity: 0, 
+      x: -100, 
+      duration: 1
+    });
+  }
+
+  else if(ukm.classList.contains('activestart')){
+    $('.activestart').addClass('d-none');
+    $('.activestart').removeClass('activestart');
+    $('.ilits').removeClass('d-none');
+    $('.ilits').addClass('activestart');
+
+    gsap.from(".ilits", {
+      opacity: 0, 
+      x: -100, 
+      duration: 1
+    });
+  };
+  
+});
+
+previous.addEventListener("click",function(){
+  if(tedx.classList.contains('activestart')){
+    $('.activestart').addClass('d-none');
+    $('.activestart').removeClass('activestart');
+    $('.ilits').removeClass('d-none');
+    $('.ilits').addClass('activestart');
+    gsap.from(".ilits", {
+      opacity: 0, 
+      x: 100, 
+      duration: 1
+    });
+  }
+
+  else if(csb.classList.contains('activestart')){
+    $('.activestart').addClass('d-none');
+    $('.activestart').removeClass('activestart');
+    $('.tedx').removeClass('d-none');
+    $('.tedx').addClass('activestart');
+    gsap.from(".tedx", {
+      opacity: 0, 
+      x: 100, 
+      duration: 1
+    });
+  }
+
+  else if(ukm.classList.contains('activestart')){
+    $('.activestart').addClass('d-none');
+    $('.activestart').removeClass('activestart');
+    $('.csb').removeClass('d-none');
+    $('.csb').addClass('activestart');
+    gsap.from(".csb", {
+      opacity: 0, 
+      x: 100, 
+      duration: 1
+    });
+  }
+
+  else if(ilits.classList.contains('activestart')){
+    $('.activestart').addClass('d-none');
+    $('.activestart').removeClass('activestart');
+    $('.ukm').removeClass('d-none');
+    $('.ukm').addClass('activestart');
+    gsap.from(".ukm", {
+      opacity: 0, 
+      x: 100, 
+      duration: 1
+    });
+  }
+});
+
 $(function () {
     $(document).scroll(function () {
       let $nav = $(".navs-top");
