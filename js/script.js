@@ -269,7 +269,7 @@ $(function () {
   
   tl2
   .to("#square1", 1, {scale:1})
-  .to("#square1,#square2,#square3", 1.5, {rotation:"360"});
+  .to("#square2,#square3", 1.5, {rotation:"360"});
 
   var tl3 = new TimelineMax({
     yoyo:true, 
