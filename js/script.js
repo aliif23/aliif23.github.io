@@ -287,4 +287,19 @@ $(function () {
   .to("#asset2", 1, {rotation:"-10"});
 
 
+  var tl4 = new TimelineMax({
+    yoyo:true, 
+    repeat:-1
+  });
+  
+  TweenMax.set("#arm", {
+    rotation:0.01,
+    z:0.01,
+    transformOrigin:"0% 100%"
+  });
+  
+  tl4
+  .to("#arm", 1.5, {scale:1})
+  .to("#arm", 1.5, {rotation:"-10"});
+
 
