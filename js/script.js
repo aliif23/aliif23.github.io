@@ -192,6 +192,9 @@ $(function () {
 
   gsap.from('.linebluelg',{x: 30, duration: 1,delay:0.6, repeat: -1, yoyo : true});
 
+  // gsap.from('#square1',{x: 30, duration: 1,delay:0.6, repeat: -1, yoyo : true});
+
+
   // gsap.from('#linebluexxl',{opacity:0, duration: .5,delay:1});
   
   gsap.from('.border1',{opacity:0, duration: 1,});
@@ -229,4 +232,59 @@ $(function () {
   gsap.from('.linewhitemd4',{ duration : 1, x: 30, repeat:-1, yoyo: true});
 
   gsap.from('.borderssm',{opacity:0, duration: 1});
+
+  gsap.from('#asset1',{opacity:0, duration: 1.5, yoyo :true, repeat: -1});
+
+  gsap.from('#Group4',{opacity:0,x:50, duration: 3, yoyo :true, repeat: -1});
+
+  gsap.from('#laravel',{opacity:0,x:-50, duration: 1.5, yoyo :true, repeat: -1});
+
+
+
+  var tl = new TimelineMax({
+    yoyo:true, 
+    repeat:-1
+  });
+  
+  TweenMax.set("#head", {
+    rotation:0.01,
+    z:0.01,
+    transformOrigin:"50% 50%"
+  });
+  
+  tl
+  .to("#head", 1.5, {scale:1})
+  .to("#head", 1.5, {rotation:"20"});
+
+  var tl2 = new TimelineMax({
+    yoyo:true, 
+    repeat:-1
+  });
+  
+  TweenMax.set("#square1,#square2,#square3", {
+    rotation:0.01,
+    z:0.01,
+    transformOrigin:"50% 50%"
+  });
+  
+  tl2
+  .to("#square1", 1, {scale:1})
+  .to("#square1,#square2,#square3", 1.5, {rotation:"360"});
+
+  var tl3 = new TimelineMax({
+    yoyo:true, 
+    repeat:-1
+  });
+  
+  TweenMax.set("#asset2", {
+    rotation:0.01,
+    z:0.01,
+    transformOrigin:"50% 50%"
+  });
+  
+  tl3
+  .to("#asset2", 1, {scale:1})
+  .to("#asset2", 1, {rotation:"-10"});
+
+
 
