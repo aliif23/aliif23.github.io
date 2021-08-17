@@ -229,7 +229,7 @@ $(function () {
 
   gsap.from('.linewhitemd3',{ duration : 1, y: 15, repeat:-1, yoyo: true});
 
-  gsap.from('.linewhitemd4',{ duration : 1, x: 30, repeat:-1, yoyo: true, linear});
+  gsap.from('.linewhitemd4',{ duration : 1, x: 30, repeat:-1, yoyo: true});
 
   gsap.from('.borderssm',{opacity:0, duration: 1});
 
